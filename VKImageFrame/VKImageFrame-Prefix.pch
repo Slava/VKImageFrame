@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'VKImageFrame' target in the 'VKImageFrame' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
