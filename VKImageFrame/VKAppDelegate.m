@@ -19,7 +19,7 @@
     [self.imageView setImage:image];
     
     
-    NSImage *image2  =[[NSWorkspace sharedWorkspace] iconForFileType:@"asdafasdfasdfadfadfadsfasdfasdfasdfas"];
+    NSImage *image2  =[[NSWorkspace sharedWorkspace] iconForFileType:@"asdfksld;aklfsdkl"];
     [[image2 TIFFRepresentation] writeToFile:@"/Users/imslavko/generic.tiff" atomically:YES];
 }
 

@@ -28,8 +28,7 @@
     
     // rectangle in corner for background effect
     NSRect cornerBgRect = NSMakeRect(0, 0, cornerSize + 3, cornerSize + 3);
-    NSColor* primeCorner = [NSColor colorWithCalibratedRed: 0.897 green: 0.785 blue: 0.292 alpha: 1];
-    [primeCorner set];
+    [[NSColor colorWithPatternImage:[[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"yellow_paper" ofType:@"jpg"]]] setFill];
     NSRectFill(cornerBgRect);
     
     // rectangle for frame which is margined
@@ -47,7 +46,7 @@
     
     // we need shadow on both frame and picture
     NSShadow *shadow = [[NSShadow alloc] init];
-    [shadow setShadowColor:[NSColor blackColor]];
+    [shadow setShadowColor:RGBA(40, 40, 40, 0.7)];
     [shadow setShadowOffset:NSMakeSize(3.1, -3.1)];
     [shadow setShadowBlurRadius:5];
     
@@ -86,15 +85,9 @@
     CGContextRef context = [[NSGraphicsContext currentContext] graphicsPort];
     
     //// Color Declarations
-    NSColor* fillColor = [NSColor colorWithCalibratedRed: 0.913 green: 0.849 blue: 0.518 alpha: 1];
-    NSColor* strokeColor = [NSColor colorWithCalibratedRed: 0.907 green: 0.808 blue: 0.367 alpha: 1];
     NSColor* primeCorner = [NSColor colorWithCalibratedRed: 0.897 green: 0.785 blue: 0.292 alpha: 1];
     NSColor* shadowColor2 = [NSColor colorWithCalibratedRed: 0.941 green: 0.727 blue: 0 alpha: 0.5];
     
-    //// Gradient Declarations
-    NSGradient* cornerGradient = [[NSGradient alloc] initWithColorsAndLocations:
-                                  fillColor, 0.0,
-                                  strokeColor, 0.59, nil];
     
     //// Shadow Declarations
     NSShadow* shadowCorner = [[NSShadow alloc] init];
@@ -117,9 +110,8 @@
     [shadow set];
     CGContextBeginTransparencyLayer(context, NULL);
     [cornerPathPath addClip];
-    [cornerGradient drawFromCenter: NSMakePoint(2.28, 5.78) radius: 10.83
-                          toCenter: NSMakePoint(16, 16) radius: 75.14
-                           options: NSGradientDrawsBeforeStartingLocation | NSGradientDrawsAfterEndingLocation];
+    [[NSColor colorWithPatternImage:[[NSImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"yellow_paper" ofType:@"jpg"]]] setFill];
+    [cornerPathPath fill];
     CGContextEndTransparencyLayer(context);
     
     ////// cornerPath Inner Shadow

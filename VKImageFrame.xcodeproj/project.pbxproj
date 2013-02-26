@@ -15,6 +15,7 @@
 		9CB29C5B16D8301300B401FC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CB29C5916D8301300B401FC /* MainMenu.xib */; };
 		9CB29C6316D8316B00B401FC /* VKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB29C6216D8316B00B401FC /* VKImageView.m */; };
 		9CB29C6516D8325800B401FC /* slava_at_life.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CB29C6416D8325800B401FC /* slava_at_life.png */; };
+		9CC0556616DBE53B00307436 /* yellow_paper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9CC0556516DBE53B00307436 /* yellow_paper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9CB29C6116D8316B00B401FC /* VKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKImageView.h; sourceTree = "<group>"; };
 		9CB29C6216D8316B00B401FC /* VKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKImageView.m; sourceTree = "<group>"; };
 		9CB29C6416D8325800B401FC /* slava_at_life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slava_at_life.png; sourceTree = "<group>"; };
+		9CC0556516DBE53B00307436 /* yellow_paper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellow_paper.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9CB29C5616D8301300B401FC /* VKAppDelegate.h */,
 				9CB29C5716D8301300B401FC /* VKAppDelegate.m */,
 				9CB29C5916D8301300B401FC /* MainMenu.xib */,
+				9CC0556516DBE53B00307436 /* yellow_paper.jpg */,
 				9CB29C4B16D8301300B401FC /* Supporting Files */,
 				9CB29C6116D8316B00B401FC /* VKImageView.h */,
 				9CB29C6216D8316B00B401FC /* VKImageView.m */,
@@ -166,6 +169,7 @@
 				9CB29C5516D8301300B401FC /* Credits.rtf in Resources */,
 				9CB29C5B16D8301300B401FC /* MainMenu.xib in Resources */,
 				9CB29C6516D8325800B401FC /* slava_at_life.png in Resources */,
+				9CC0556616DBE53B00307436 /* yellow_paper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 				9CB29C6016D8301300B401FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
